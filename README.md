@@ -1,2 +1,6 @@
 # embedded_nuggets
-A collection of snippets of Arduino et. all code to remind myself how I do things from project to project
+This repo is just a collection of code—sometimes snippets, sometimes whole files—to remind myself how I do things from project to project.
+
+Things like...
+° My boilerplate button debouncing code
+° 
