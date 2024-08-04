@@ -10,6 +10,8 @@ typedef enum {
 button_state_t buttonState = BUTTON_IDLE;
 unsigned long debounceTimeout = 0;
 
+bool isLEDOn = false;
+
 void handleButton(button_state_t bs);
 
 void setup() {
@@ -46,8 +48,8 @@ void handleButton(button_state_t bs) {
     case BUTTON_DOWN:
       break;
     case BUTTON_PRESSED:
-      ledOn = ledOn == LOW ? HIGH : LOW;
-      digitalWrite(PIN_TEST_LED, ledOn);
+      isLEDOn = (isLEDOn == LOW ? HIGH : LOW);
+      digitalWrite(PIN_TEST_LED, isLEDOn);
       break;
     case BUTTON_UP:
       break;
